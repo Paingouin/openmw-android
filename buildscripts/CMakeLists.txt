@@ -56,7 +56,7 @@ set(LIBICU_VERSION 70-1)
 set(LIBICU_HASH SHA256=4013d7aff8a34bae410664bdb16554d7eda03654b22627b9284ab55a685492d4)
 
 # https://github.com/OpenMW/openmw/commits/master
-set(OPENMW_VERSION 0d27dc233635527402d067736ace157d8ae431b8)
+set(OPENMW_VERSION 35aa6c7b9763d48ca2177d7f723f41bf13287089)
 set(OPENMW_HASH SHA256=44d044ad0a5546216fe611fe92c37065bb07e2efeeeaac4f049dae03df313186)
 
 # End of configurable options
@@ -598,7 +598,7 @@ set(OPENMW_PATCH
 ExternalProject_Add(openmw
 	DEPENDS boost openal osg mygui ffmpeg sdl2 bullet lz4 luajit libicu
 
-	URL https://github.com/sisah2/openmw/archive/${OPENMW_VERSION}.tar.gz
+	URL https://github.com/Paingouin/openmw/archive/${OPENMW_VERSION}.tar.gz
 #	URL_HASH ${OPENMW_HASH}
 	DOWNLOAD_DIR ${download_dir}
 
